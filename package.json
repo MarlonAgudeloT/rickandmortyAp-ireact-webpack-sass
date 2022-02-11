@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config config/webpack.prod.js",
+    "dev": "webpack serve --config config/webpack.dev.js"
   },
   "keywords": [],
   "author": "Marlon Agudelo <marlonagudelotoro@gmail.com>",
@@ -32,5 +33,6 @@
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4",
     "webpack-merge": "^5.8.0"
-  }
+  },
+  "browserslist": "> 0.25%, not dead, not ie 11"
 }

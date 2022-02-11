@@ -7,8 +7,7 @@ function App (){
             <h1> react + Webpack + SASS</h1>
             <p> Mi proyecto de React con Webpack</p>
         </div>
-    )
-
+    );
 }
 
-    export default App
+    export default App;
