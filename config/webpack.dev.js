@@ -10,15 +10,12 @@ const devConfig ={
     devServer:{
         port:3000,
         contentBass:"../dist",
-        open:"chrome",
+        open:"firefox",
         hot: true,
     },
     target:"web",
-    plugins:[
-        new HotModuleReplacementPlugin(),
-        new ReactRefreshWebpackPlugin()
-    ],
-    devtool:"eval-source-map"
+    plugins:[new HotModuleReplacementPlugin(),new ReactRefreshWebpackPlugin()],
+    devtool:"eval-source-map",
 };
 
 module.exports = merge(common,devConfig)
