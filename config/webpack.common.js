@@ -1,14 +1,14 @@
-const {CleanWebpackPlugin} = require(clean-webpack-plugin);
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin"); 
 const path = require("path");
 
 /** @type {import('webpack').Configuration} */
 
 module.exports = {
-    entry:"./index.js",
+    entry:"./src/index.js",
     output:{
         path: path.resolve(__dirname,"../dist"),
-        filename: "[name][contenthash].js",
+        filename: "[name].[contenthash].js",
         publicPath:"",
     },
     module:{
@@ -30,7 +30,7 @@ module.exports = {
         ]
     },
     resolve:{
-        extensiones:[".js",".jsx",".json"]
+        extensions:[".js",".jsx",".json"]
     },
     plugins:[
         new CleanWebpackPlugin(),

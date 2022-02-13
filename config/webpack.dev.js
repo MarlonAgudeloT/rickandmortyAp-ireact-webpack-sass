@@ -1,7 +1,7 @@
-const { HotModuleReplacementPlugin } = require('webpack');
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
+const { HotModuleReplacementPlugin } = require("webpack");
+const { merge } = require("webpack-merge");
 const common = require("./webpack.common");
-const {merge} = require("webpack-merge");
 
 /** @type {import('webpack').Configuration} */
 
@@ -10,7 +10,7 @@ const devConfig ={
     devServer:{
         port:3000,
         contentBass:"../dist",
-        open:"firefox",
+        open:"chrome",
         hot: true,
     },
     target:"web",
