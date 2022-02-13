@@ -1,9 +1,8 @@
-import "./App.scss"
-import React,{Fragment} from 'react';
-import Header from "./components/Header "
-import Characters from './components/Characters'
+import React, {Fragment} from 'react';
+import Header from "./components/Header.js"
+import Characters from './components/Characters.js'
 
-function App (){
+const App = () => {
     return(
         <Fragment>
             <Header
